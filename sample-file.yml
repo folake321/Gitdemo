@@ -28,6 +28,10 @@ spec:
           protocol: "TCP"
         - containerPort: 81
           protocol: "TCP"  
+          tier: basic
+          app: myapp2
+          label: Dictionary3 
+
 
 
                      
