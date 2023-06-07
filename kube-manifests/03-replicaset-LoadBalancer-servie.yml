@@ -11,3 +11,8 @@ spec:
       port: 80 # Service Port
       targetPort: 80 # Container Port
       targetPort: 443
+      ports: 
+    - name: http
+      port: 80 # Service Port
+      targetPort: 80 # Container Port
+      targetPort: 8443
