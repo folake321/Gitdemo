@@ -13,12 +13,12 @@ person: # Dictionary
       age: 22
 --- # YAML Document Separator
 apiVersion: v1 # String
-kind: Pod  # String
+kind: Pod # String
 metadata: # Dictionary
   name: myapp-pod
-  labels: # Dictionary 
-    app: myapp    
-    tier: frontend     
+  labels: # Dictionary
+    app: myapp
+    tier: frontend
 spec:
   containers: # List
     - name: myapp
@@ -27,13 +27,18 @@ spec:
         - containerPort: 80
           protocol: "TCP"
         - containerPort: 81
-          protocol: "TCP"  
+          protocol: "TCP"
           tier: basic
           app: myapp2
-          label: Dictionary3 
-
-
-
-                     
-
-  
+          label: Dictionary3
+containers: # List
+  - name: myapp
+    image: stacksimplify/kubenginx:1.0.0
+    ports: # List
+      - containerPort: 80
+        protocol: "TCP"
+      - containerPort: 81
+        protocol: "TCP"
+        tier: basic
+        app: myapp2
+        label: Dictionary4
