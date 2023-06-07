@@ -18,4 +18,9 @@ spec: # Dictionary
           image: stacksimplify/kubenginx:2.0.0
           ports: 
             - containerPort: 80  
-    
+ spec:
+      containers: # List
+        - name: myapp2-container
+          image: stacksimplify/kubenginx:2.0.0
+          ports: 
+            - containerPort: 8080   
